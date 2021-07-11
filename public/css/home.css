@@ -1,0 +1,241 @@
+@import url('/css/general.css');
+
+/* VERSIÓN MOBILE */
+/* HEADER */
+.home{
+    font-family: 'Roboto';
+    background-color: #ebebeb;;
+    width: 100%;
+}
+.home .header{
+    background-color: #EAC926;
+    width: 100%;
+    padding: 20px
+}
+
+.home .header .logo{
+    margin-top: 15px;
+    margin-right: 10px;
+    width: 50%; 
+}
+
+.home .header .buscar{   /* Lo dejé así por gusto personal */
+    margin: 0px;
+    margin-top: 10px;
+    background-color: #03264C;  
+    border: 1px solid #3077c2;
+    padding: 2px;
+    color: white; 
+    border-radius: 4px;
+    width: 50%; 
+}
+
+.home .header .buscar input{
+    width: 90%;
+}
+
+.home .header .logo-buscar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .compra{
+    display: flex;
+    align-self: center;
+    margin-top: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+.home .header .lista1, .lista2{
+    display: none;
+} 
+
+.home .burger-menu{
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 50%;
+    background-color: white;
+    border: solid 10px #03264C;;
+    border-radius: 5px;
+}
+
+.home .body .banner {
+   display: none;
+  }
+
+/* BODY */
+.home .body{
+    background-color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.home .body img{
+    width: 10em;
+    height: 10em;
+}
+
+.home h3{
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.home .body .descripcion article{
+    width: auto;
+    margin-top: 26px;
+    margin-left: 80px;
+}
+
+.home .descripcion .envio { 
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    color: rgb(37, 206, 37);
+    position: relative;
+    right: 24px;
+    top: -10px;
+}
+
+.home .descripcion p{
+    font-size: 18px;
+} 
+
+.home .descripcion h4{
+    display: none;
+}
+
+.home .descripcion span{
+    font-size: 16px;
+}
+
+.home .descripcion span{
+    color: rgb(37, 206, 37);
+}
+
+.home .descripcion p, span{
+    height: 1px;
+    display: inline;
+}
+
+/* FOOTER */
+.home footer{
+    background-color: white;
+    border: none;
+    width: auto;
+    margin-bottom: auto;
+ }
+ 
+ .home footer article{
+     text-align: center;
+     margin-top: 20px
+ }
+ 
+ .home footer article i{
+     font-size: 30px;
+     margin-top: 15px;
+ }
+
+ /* TABLET */
+@media (min-width: 361px) {
+    *{
+        box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
+    }
+
+    .home .header .buscar{  
+        padding: 6px 3px;
+    }
+
+    .home .compra{
+        margin-left: 30%;
+    }
+
+    .home .header nav{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 7px;
+    }
+
+    .home .header ul{
+        display: flex;
+    }
+
+    .home .header .lista1, .lista2{
+        display: flex; 
+        font-size: 15px;
+        border: none;
+    }
+
+    .home .burger-menu{
+        display: none
+    }
+
+    .home .body .banner {
+        display: inline;
+        width: 100%;
+      }
+    
+
+    .home .body article{
+        display: inline-block; 
+    }
+
+    .home .descripcion h4{
+        display: block;
+        color: gray;
+        font-size: 16px;
+        font-weight: lighter;
+    }
+}
+
+
+/* DESKTOP */
+@media (min-width: 769px){
+
+    *{
+        box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
+    }
+
+    .home .header .buscar{  
+        padding: 6px 3px;
+    }
+
+    .home .compra{
+        margin-left: 40%;
+    }
+
+    .home .burger-menu{
+        display: none
+    }
+
+    .home .body .banner {
+        display: inline;
+        width: 100%;
+      }
+
+    .home .body article{
+        display: inline-block;
+    }
+
+    .home .descripcion h4{
+        display: block;
+        position: relative;
+        border-top: solid 1px #ebebeb;
+        opacity: 0;
+        transition: all 300ms;
+        color: gray;
+        font-size: 16px;
+        font-weight: lighter;
+    }
+
+    .home .descripcion h4:hover{
+        opacity: 1;
+    }
+}

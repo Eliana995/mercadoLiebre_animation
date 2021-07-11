@@ -1,0 +1,210 @@
+@import url('/css/general.css');
+
+/* VERSIÓN MOBILE */
+/* HEADER */
+.home{
+    font-family: 'Roboto';
+    background-color: #ebebeb;;
+    width: 100%;
+}
+.home .header{
+    background-color: #EAC926;
+    width: 100%;
+    padding: 5px
+}
+
+.home .header .logo{
+    margin-top: 15px;
+    margin-right: 10px;
+    width: 45%; 
+}
+
+.home .header .buscar{   /* Lo dejé así por gusto personal */
+    margin: 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #03264C;  
+    border: 1px solid #3077c2;
+    padding: 2px;
+    color: white; 
+    border-radius: 4px;
+    width: 45%; 
+}
+
+.home .header .buscar input{
+    width: 90%;
+}
+
+.home .header .logo-buscar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .compra{
+    display: flex;
+    align-self: center;
+    margin-top: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+.home .header .lista1, .lista2{
+    display: none;
+} 
+
+.home .burger-menu{
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 45%;
+    background-color: white;
+    border: solid 10px #03264C;;
+    border-radius: 5px;
+}
+
+/* MAIN */
+.home .main-login a{
+    background-color: #EAC926;
+    padding: 2px;
+    color: black;
+    border: solid 1px black;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.home .main-login .email, .password{
+    line-height: 20px;
+    padding-top: 5px ;
+    padding-left: 25%;
+    padding-bottom: 1px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.home .main-login .submit-log a{
+    background-color: #EAC926;
+    padding: 1.5px;
+    color: black;
+    border: solid 1px black;
+    font-size: 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-left: 39%;
+}
+
+.home .main-login .submit-log a:hover{
+    background-color: #0022AA;
+}
+
+/* FOOTER */
+footer{
+    display: none;
+}
+
+/* VERSIÓN TABLET */
+@media (min-width: 761px){
+    /* HEADER */
+    .home .header .buscar{  
+        margin-top: 10px;
+        margin-right: 5%;
+        padding: 4px;
+    }
+
+    /* LISTAS */
+    .home .header nav{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 7px;
+    }
+
+    .home .header ul{
+        display: flex;
+    }
+
+    .home .header .lista1, .lista2{
+        display: flex; 
+        font-size: 15px;
+        border: none;
+    }
+
+    .home .burger-menu{
+        display: none;
+    }
+
+    /* MAIN */
+
+    .home .main-login h4{
+        display: flex;
+        justify-content: center;
+    }
+
+    .home .main-login .email, .password{
+        line-height: 15px;
+        padding-top: 10px;
+        padding-left: 40%;
+        padding-bottom: 20px;
+    }
+
+    .home .main-login .submit-log a{
+        margin-left: 46%;
+    }
+
+    footer{
+        display: none;
+    }
+}
+
+/* VERSIÓN DESKTOP */
+@media (min-width: 1024px){
+    /* MAIN */
+    .home .main-login .email, .password{
+        line-height: 15px;
+        padding-top: 10px;
+        padding-left: 46%;
+        padding-bottom: 20px;
+    }
+
+    .home .main-login .submit-log a{
+        margin-left: 49%;
+    }
+
+    /* FOOTER */
+footer{
+    display: inline-block;
+    border: none;
+    width: 100%;
+    margin-bottom: auto;
+ }
+
+ footer .caja-art{
+     width: 100%;
+     display: flex;
+    flex-direction: row;
+ }
+ 
+ .home footer article{
+     text-align: center;
+     margin-top: 20px
+ }
+ 
+ .home footer article i{
+     font-size: 30px;
+     margin-top: 15px;
+ }
+
+ .home footer article i:hover{
+    color: orangered;
+ }
+
+ .home footer article p{
+     margin-top: 15px;
+ }
+
+ .home footer .copyright{
+     font-size: 20px;
+     margin-top: 35px;
+ }
+}
